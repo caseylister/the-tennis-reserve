@@ -1,36 +1,20 @@
 import React from 'react';
-import logo from '../../assets/logo.png'
 
-function Nav() {
+function Nav(props) {
     
-      const handleClick = () => {
-        console.log("click handled")
-      }
+const tabs = ['Home', 'Gallery', 'Contact'];
 
   return (
     <header data-testid="header" className="flex-row px-1">
-        <h2>
-            <a href="/">
-                <img src={logo} alt="tennis reserve logo" width="70"></img>
-            </a>
-        </h2>
         <nav>
-            <ul className="flex-row">
-                <li className="mx-2">
-                    <a href="#about" onClick={() => handleClick()}>
-                        About Us
-                    </a>
-                </li>
-                <li className="mx-2">
-                    <a href="#gallery" onClick={() => handleClick()}>
-                         Gallery
-                    </a>
-                </li>
-                <li className="mx-2">
-                    <a href="#contact" onClick={() => handleClick()}>
-                        Contact
-                    </a>
-                </li>
+            <ul className ="flex-row">
+                    {tabs.map((tab) => (
+                        <li className="mx-1" key={tab}>
+                            <a href={'#' + tab}
+                            onClick={() => props.handlePageChange(tab)}
+                            className ={props.currentPage === tab ? 'nav-link active' : 'mx-1'}> {tab} </a>
+                        </li>
+                    ))}
             </ul>
         </nav>
     </header>

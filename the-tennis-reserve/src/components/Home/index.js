@@ -1,7 +1,7 @@
 import React from "react";
 import coverImage from '../../assets/cover.png'
 
-function About(){
+function Home(){
     return(
         <section className="my-5">
             <h1>The Tennis Reserve</h1>
@@ -10,4 +10,4 @@ function About(){
     )
 }
 
-export default About;
+export default Home;
