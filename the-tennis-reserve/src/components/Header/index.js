@@ -3,6 +3,7 @@ import Nav from "../Nav";
 import Home from "../Home";
 import Contact from "../Contact";
 import Gallery from "../Gallery";
+import Services from "../Services";
 import logo from '../../assets/logo.png'
 
 function Header(){
@@ -14,6 +15,8 @@ function Header(){
                 return <Home></Home>
             case "Gallery":
                 return <Gallery></Gallery>
+            case "Services":
+                return <Services></Services>
             case "Contact":
                 return <Contact></Contact>
             default:
