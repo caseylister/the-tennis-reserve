@@ -2,13 +2,13 @@ import React from "react";
 
 function Services(){
     return(
-    <div>We offer...
+    <div className="services">We offer...
         <ul>
-            <li>Individual / Group Classes for all ages!</li>
-            <li>Bar-B-Que's!</li>
-            <li>Community Parties!</li>
-            <li>Dog Interactions!</li>
-            <li></li>
+            <li className="services">Individual / Group Classes for all ages!</li>
+            <li className="services">Something</li>
+            <li className="services">Something</li>
+            <li className="services">Something</li>
+            <li className="services">Something!</li>
         </ul>
     </div>
 

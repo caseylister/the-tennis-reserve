@@ -9,8 +9,7 @@
 
 :root{
   --primary-color: #31572C;
-  --secondary-color: #90A955;
-  --tertiary-color: #ECF39E;
+  --secondary-color: #ECF39E;
   --black: #000000;
 }
 
@@ -48,7 +47,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover{
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   border-radius: 5px;
   padding: 15px 5px 5px 5px;
 }
@@ -146,8 +145,8 @@ header nav ul li a:hover{
   border-radius: 5px;
   background-color: var(--white);
   font-size: 22px;
-  border: 3px solid var(--tertiary-color);
-  box-shadow: var(--tertiary-color) 0px 3px 10px;
+  border: 3px solid var(--secondary-color);
+  box-shadow: var(--secondary-color) 0px 3px 10px;
   outline: none;
 }
 
@@ -156,7 +155,7 @@ header nav ul li a:hover{
   padding: 10px;
   margin: 15px auto;
   border-radius: 5px;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   opacity: 0.7;
   border: none;
   cursor: pointer;
@@ -180,4 +179,28 @@ header nav ul li a:hover{
   text-align: center;
   font-size: 26px;
   margin-bottom: 50px;
+}
+
+/* Services styles */
+
+.services {
+  font-size: 45px;
+}
+
+/* gallery styles */
+
+.top-row{
+  margin-top: 40px;
+}
+
+.top-row, .gallery-rows{
+  text-align: center;
+}
+
+.social{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 18px;
+  margin-bottom: 40px;
+  color: var(--primary-color)
 }
